@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		897B674720F5E03600006AB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897B674620F5E03600006AB4 /* AppDelegate.swift */; };
+		897B674920F5E03600006AB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897B674820F5E03600006AB4 /* ViewController.swift */; };
+		897B674C20F5E03600006AB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 897B674A20F5E03600006AB4 /* Main.storyboard */; };
+		897B674E20F5E03700006AB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 897B674D20F5E03700006AB4 /* Assets.xcassets */; };
+		897B675120F5E03700006AB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 897B674F20F5E03700006AB4 /* LaunchScreen.storyboard */; };
+		897B675C20F5E03800006AB4 /* UndoManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897B675B20F5E03800006AB4 /* UndoManagerTests.swift */; };
+		897B676720F5E03800006AB4 /* UndoManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897B676620F5E03800006AB4 /* UndoManagerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		897B675820F5E03800006AB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 897B673B20F5E03600006AB4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 897B674220F5E03600006AB4;
+			remoteInfo = UndoManager;
+		};
+		897B676320F5E03800006AB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 897B673B20F5E03600006AB4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 897B674220F5E03600006AB4;
+			remoteInfo = UndoManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		897B674320F5E03600006AB4 /* UndoManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UndoManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		897B674620F5E03600006AB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		897B674820F5E03600006AB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		897B674B20F5E03600006AB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		897B674D20F5E03700006AB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		897B675020F5E03700006AB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		897B675220F5E03700006AB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		897B675720F5E03800006AB4 /* UndoManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UndoManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		897B675B20F5E03800006AB4 /* UndoManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UndoManagerTests.swift; sourceTree = "<group>"; };
+		897B675D20F5E03800006AB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		897B676220F5E03800006AB4 /* UndoManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UndoManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		897B676620F5E03800006AB4 /* UndoManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UndoManagerUITests.swift; sourceTree = "<group>"; };
+		897B676820F5E03800006AB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		897B674020F5E03600006AB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		897B675420F5E03800006AB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		897B675F20F5E03800006AB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		897B673A20F5E03600006AB4 = {
+			isa = PBXGroup;
+			children = (
+				897B674520F5E03600006AB4 /* UndoManager */,
+				897B675A20F5E03800006AB4 /* UndoManagerTests */,
+				897B676520F5E03800006AB4 /* UndoManagerUITests */,
+				897B674420F5E03600006AB4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		897B674420F5E03600006AB4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				897B674320F5E03600006AB4 /* UndoManager.app */,
+				897B675720F5E03800006AB4 /* UndoManagerTests.xctest */,
+				897B676220F5E03800006AB4 /* UndoManagerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		897B674520F5E03600006AB4 /* UndoManager */ = {
+			isa = PBXGroup;
+			children = (
+				897B674620F5E03600006AB4 /* AppDelegate.swift */,
+				897B674820F5E03600006AB4 /* ViewController.swift */,
+				897B674A20F5E03600006AB4 /* Main.storyboard */,
+				897B674D20F5E03700006AB4 /* Assets.xcassets */,
+				897B674F20F5E03700006AB4 /* LaunchScreen.storyboard */,
+				897B675220F5E03700006AB4 /* Info.plist */,
+			);
+			path = UndoManager;
+			sourceTree = "<group>";
+		};
+		897B675A20F5E03800006AB4 /* UndoManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				897B675B20F5E03800006AB4 /* UndoManagerTests.swift */,
+				897B675D20F5E03800006AB4 /* Info.plist */,
+			);
+			path = UndoManagerTests;
+			sourceTree = "<group>";
+		};
+		897B676520F5E03800006AB4 /* UndoManagerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				897B676620F5E03800006AB4 /* UndoManagerUITests.swift */,
+				897B676820F5E03800006AB4 /* Info.plist */,
+			);
+			path = UndoManagerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		897B674220F5E03600006AB4 /* UndoManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 897B676B20F5E03800006AB4 /* Build configuration list for PBXNativeTarget "UndoManager" */;
+			buildPhases = (
+				897B673F20F5E03600006AB4 /* Sources */,
+				897B674020F5E03600006AB4 /* Frameworks */,
+				897B674120F5E03600006AB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UndoManager;
+			productName = UndoManager;
+			productReference = 897B674320F5E03600006AB4 /* UndoManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		897B675620F5E03800006AB4 /* UndoManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 897B676E20F5E03800006AB4 /* Build configuration list for PBXNativeTarget "UndoManagerTests" */;
+			buildPhases = (
+				897B675320F5E03800006AB4 /* Sources */,
+				897B675420F5E03800006AB4 /* Frameworks */,
+				897B675520F5E03800006AB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				897B675920F5E03800006AB4 /* PBXTargetDependency */,
+			);
+			name = UndoManagerTests;
+			productName = UndoManagerTests;
+			productReference = 897B675720F5E03800006AB4 /* UndoManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		897B676120F5E03800006AB4 /* UndoManagerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 897B677120F5E03800006AB4 /* Build configuration list for PBXNativeTarget "UndoManagerUITests" */;
+			buildPhases = (
+				897B675E20F5E03800006AB4 /* Sources */,
+				897B675F20F5E03800006AB4 /* Frameworks */,
+				897B676020F5E03800006AB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				897B676420F5E03800006AB4 /* PBXTargetDependency */,
+			);
+			name = UndoManagerUITests;
+			productName = UndoManagerUITests;
+			productReference = 897B676220F5E03800006AB4 /* UndoManagerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		897B673B20F5E03600006AB4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = MyOrg;
+				TargetAttributes = {
+					897B674220F5E03600006AB4 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					897B675620F5E03800006AB4 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 897B674220F5E03600006AB4;
+					};
+					897B676120F5E03800006AB4 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 897B674220F5E03600006AB4;
+					};
+				};
+			};
+			buildConfigurationList = 897B673E20F5E03600006AB4 /* Build configuration list for PBXProject "UndoManager" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 897B673A20F5E03600006AB4;
+			productRefGroup = 897B674420F5E03600006AB4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				897B674220F5E03600006AB4 /* UndoManager */,
+				897B675620F5E03800006AB4 /* UndoManagerTests */,
+				897B676120F5E03800006AB4 /* UndoManagerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		897B674120F5E03600006AB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				897B675120F5E03700006AB4 /* LaunchScreen.storyboard in Resources */,
+				897B674E20F5E03700006AB4 /* Assets.xcassets in Resources */,
+				897B674C20F5E03600006AB4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		897B675520F5E03800006AB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		897B676020F5E03800006AB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		897B673F20F5E03600006AB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				897B674920F5E03600006AB4 /* ViewController.swift in Sources */,
+				897B674720F5E03600006AB4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		897B675320F5E03800006AB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				897B675C20F5E03800006AB4 /* UndoManagerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		897B675E20F5E03800006AB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				897B676720F5E03800006AB4 /* UndoManagerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		897B675920F5E03800006AB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 897B674220F5E03600006AB4 /* UndoManager */;
+			targetProxy = 897B675820F5E03800006AB4 /* PBXContainerItemProxy */;
+		};
+		897B676420F5E03800006AB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 897B674220F5E03600006AB4 /* UndoManager */;
+			targetProxy = 897B676320F5E03800006AB4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		897B674A20F5E03600006AB4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				897B674B20F5E03600006AB4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		897B674F20F5E03700006AB4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				897B675020F5E03700006AB4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		897B676920F5E03800006AB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		897B676A20F5E03800006AB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		897B676C20F5E03800006AB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UndoManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.myCompany.UndoManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		897B676D20F5E03800006AB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UndoManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.myCompany.UndoManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		897B676F20F5E03800006AB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UndoManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.myCompany.UndoManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UndoManager.app/UndoManager";
+			};
+			name = Debug;
+		};
+		897B677020F5E03800006AB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UndoManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.myCompany.UndoManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UndoManager.app/UndoManager";
+			};
+			name = Release;
+		};
+		897B677220F5E03800006AB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UndoManagerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.myCompany.UndoManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UndoManager;
+			};
+			name = Debug;
+		};
+		897B677320F5E03800006AB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UndoManagerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.myCompany.UndoManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UndoManager;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		897B673E20F5E03600006AB4 /* Build configuration list for PBXProject "UndoManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				897B676920F5E03800006AB4 /* Debug */,
+				897B676A20F5E03800006AB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		897B676B20F5E03800006AB4 /* Build configuration list for PBXNativeTarget "UndoManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				897B676C20F5E03800006AB4 /* Debug */,
+				897B676D20F5E03800006AB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		897B676E20F5E03800006AB4 /* Build configuration list for PBXNativeTarget "UndoManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				897B676F20F5E03800006AB4 /* Debug */,
+				897B677020F5E03800006AB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		897B677120F5E03800006AB4 /* Build configuration list for PBXNativeTarget "UndoManagerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				897B677220F5E03800006AB4 /* Debug */,
+				897B677320F5E03800006AB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 897B673B20F5E03600006AB4 /* Project object */;
+}
