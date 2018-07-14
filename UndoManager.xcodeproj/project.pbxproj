@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89115F9120FA01BC0056494F /* jeremy-bishop-391907-unsplash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 89115F9020FA01BC0056494F /* jeremy-bishop-391907-unsplash.jpg */; };
 		897B674720F5E03600006AB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897B674620F5E03600006AB4 /* AppDelegate.swift */; };
 		897B674920F5E03600006AB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897B674820F5E03600006AB4 /* ViewController.swift */; };
 		897B674C20F5E03600006AB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 897B674A20F5E03600006AB4 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		89115F9020FA01BC0056494F /* jeremy-bishop-391907-unsplash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "jeremy-bishop-391907-unsplash.jpg"; sourceTree = "<group>"; };
 		897B674320F5E03600006AB4 /* UndoManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UndoManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		897B674620F5E03600006AB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		897B674820F5E03600006AB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 		897B674520F5E03600006AB4 /* UndoManager */ = {
 			isa = PBXGroup;
 			children = (
+				89115F9020FA01BC0056494F /* jeremy-bishop-391907-unsplash.jpg */,
 				897B674620F5E03600006AB4 /* AppDelegate.swift */,
 				897B674820F5E03600006AB4 /* ViewController.swift */,
 				897B674A20F5E03600006AB4 /* Main.storyboard */,
@@ -230,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				897B675120F5E03700006AB4 /* LaunchScreen.storyboard in Resources */,
+				89115F9120FA01BC0056494F /* jeremy-bishop-391907-unsplash.jpg in Resources */,
 				897B674E20F5E03700006AB4 /* Assets.xcassets in Resources */,
 				897B674C20F5E03600006AB4 /* Main.storyboard in Resources */,
 			);

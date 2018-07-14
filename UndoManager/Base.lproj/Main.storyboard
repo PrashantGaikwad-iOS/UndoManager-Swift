@@ -1,24 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4Aj-76-8zm">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--UndoManager-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UndoManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jeremy-bishop-391907-unsplash.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="VtQ-2K-Gmw">
+                                <rect key="frame" x="0.0" y="32" width="667" height="343"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aa7-X3-JWA">
+                                <rect key="frame" x="273.5" y="52" width="120" height="120"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Ya8-OR-K3t"/>
+                                    <constraint firstAttribute="height" constant="120" id="ZX8-tK-e2U"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="pXY-aP-NC6">
+                                <rect key="frame" x="20" y="297" width="627" height="58"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="cjW-B1-Xbv"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vEB-xE-ywW">
+                                    <size key="itemSize" width="87" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="ERA-6B-4wk">
+                                        <rect key="frame" x="0.0" y="4" width="87" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="87" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJQ-yO-WVl">
+                                                    <rect key="frame" x="0.0" y="0.0" width="87" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.99607843139999996" green="0.93333333330000001" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-BoldItalic" family="Avenir Next" pointSize="15"/>
+                                                    <color key="textColor" red="0.86289062500000002" green="0.19399011290000001" blue="0.1699208223" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="icU-Rh-I3v"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Lyi-of-LSM"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pXY-aP-NC6" secondAttribute="bottom" constant="20" id="9Zg-d2-1lt"/>
+                            <constraint firstItem="VtQ-2K-Gmw" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="9vx-0k-DUH"/>
+                            <constraint firstItem="pXY-aP-NC6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="A8J-LZ-UAk"/>
+                            <constraint firstItem="aa7-X3-JWA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Ha5-ff-1nf"/>
+                            <constraint firstItem="VtQ-2K-Gmw" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="Tas-Nz-2ND"/>
+                            <constraint firstItem="aa7-X3-JWA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eah-ks-fZ9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pXY-aP-NC6" secondAttribute="trailing" constant="20" id="i5H-NI-6Eo"/>
+                            <constraint firstItem="VtQ-2K-Gmw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pF3-zB-aL5"/>
+                            <constraint firstItem="VtQ-2K-Gmw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="sve-XD-DTk"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="UndoManager" id="Q0O-MA-adh">
+                        <barButtonItem key="leftBarButtonItem" systemItem="undo" id="fAF-NI-Aei">
+                            <color key="tintColor" red="0.47013372661990482" green="0.1150058101875225" blue="0.50252995466321249" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="undoAction:" destination="BYZ-38-t0r" id="VQw-gN-ysh"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="redo" id="EOb-fd-69g">
+                            <color key="tintColor" red="0.47013372661990482" green="0.1150058101875225" blue="0.50252995466321249" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="redoAction:" destination="BYZ-38-t0r" id="U9o-SS-fWd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="colorView" destination="aa7-X3-JWA" id="Mk7-HH-U3W"/>
+                        <outlet property="colorsCollectionView" destination="pXY-aP-NC6" id="WKC-SJ-bSC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="927.88605697151434" y="132"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fve-yg-fWn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4Aj-76-8zm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="H4A-OW-rPM">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="32"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Pa3-gc-vwK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BEY-Ns-2TT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.18140929535232" y="132"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="jeremy-bishop-391907-unsplash.jpg" width="5472" height="3648"/>
+    </resources>
 </document>
